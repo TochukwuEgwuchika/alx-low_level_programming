@@ -11,11 +11,12 @@
 
 void print_numbers(void)
 {
-	int number;
+	int number = 0;
 
 	while (number < 10)
 	{
 		_putchar('0' + number);
+		number++;
 	}
 	_putchar('\n');
 }
