@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * print_diagonal - prints diagonals
  * Return: 0
