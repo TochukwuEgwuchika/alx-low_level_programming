@@ -11,7 +11,7 @@ int _isdigit(int c)
 {
 	int retval;
 
-	if (c >= 0 && c <= 9)
+	if (c >= '0' && c <= '9')
 	{
 		retval = 1;
 	}
