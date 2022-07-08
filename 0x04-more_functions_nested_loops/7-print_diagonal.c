@@ -17,7 +17,7 @@ void print_diagonal(int n)
 	else
 	{
 		leave_blank = n - 1;
-		while (i < leave_blank)
+		while (i < n && i != 1)
 		{
 			_putchar(" ");
 			i++;
