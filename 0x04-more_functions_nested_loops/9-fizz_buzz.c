@@ -31,5 +31,9 @@ void main(void)
 		{
 			printf(" ");
 		}
+		else
+		{
+			continue;
+		}
 	}
 }
