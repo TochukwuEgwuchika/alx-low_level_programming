@@ -1,8 +1,13 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagonal - prints diagonals
+ *
  * @n: number of diagonals
+ *
+ * Description: prints diagonals with _putchar
+ *
  * Return: void
  */
 
