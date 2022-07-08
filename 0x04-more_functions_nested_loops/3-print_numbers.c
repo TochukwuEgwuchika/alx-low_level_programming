@@ -13,10 +13,9 @@ void print_numbers(void)
 {
 	int number;
 
-	for (number = 0; number <= 9; number++)
+	while (number < 10)
 	{
-		_putchar(number);
+		_putchar('0' + number);
 	}
 	_putchar('\n');
-	return (void);
 }
