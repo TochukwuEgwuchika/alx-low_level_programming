@@ -2,7 +2,7 @@
 
 /**
  * main - fizzbuzz
- * Return: void
+ * Return: 0 if successful
  */
 
 int main(void)
@@ -36,4 +36,5 @@ int main(void)
 			continue;
 		}
 	}
+	return (0);
 }
