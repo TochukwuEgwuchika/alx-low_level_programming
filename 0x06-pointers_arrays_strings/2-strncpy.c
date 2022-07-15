@@ -3,7 +3,7 @@
 
 /**
  * _strncpy - copies a string
- * @dest; parameter
+ * @dest: parameter
  * @src: parameter
  * @n: parameter
  * Return: ptr
@@ -13,8 +13,9 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	if (dest == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
+
 	char *ptr = dest;
 	while (*src && n--)
 	{
@@ -23,5 +24,5 @@ char *_strncpy(char *dest, char *src, int n)
 		src++;
 	}
 	*dest = '\0';
-	return ptr;
+	return (ptr);
 }
