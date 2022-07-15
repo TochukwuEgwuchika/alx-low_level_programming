@@ -4,6 +4,7 @@
  * _strncat - concatenates two strings
  * @dest: parameter
  * @src: parameter
+ * @n: parameter
  * Return: dest
  */
 
@@ -20,7 +21,6 @@ char *_strncat(char *dest, const char *src, size_t n)
 	{
 		dest[i + j] = src[j];
 	}
-
 	dest[i + j] = '\0';
-	return dest;
+	return (dest);
 }
