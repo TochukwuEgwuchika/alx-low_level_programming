@@ -1,37 +1,52 @@
 #include "main.h"
-#include <stddef.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * _strdup - duplicates a string
- * @str: string to be duplicated
- * Return: 0
+ * _strlen - return length of a string
+ *
+ * @s: char type
+ * Return:  length of string
+ */
+int _strlen(char *s)
+{
+	int a;
+
+	for (a = 0; s[a] != '\0'; a++)
+	{
+
+	}
+	return (a);
+}
+
+/**
+ * *_strdup - function to return pointer to string
+ * @str: pointer to string array input
+ * Return: pointer to string created
  */
 
 char *_strdup(char *str)
 {
-	char *new;
-	int i = 0;
+	char *ptr;
+	int size;
+	int x;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	while (str[i] != '\0')
-	{
-		i++;
-	}
+	size = _strlen(str) + 1;
+	ptr = malloc(size * sizeof(char));
 
-
-	new = malloc(i * sizeof(char));
-
-	if (new  == NULL)
+	x = 0;
+	while (x < size)
 	{
-		return (NULL);
+		if (ptr == NULL)
+		{
+			return (NULL);
 	}
-	else
-	{
-		new = str;
-		return new;
+		ptr[x] = str[x];
+		x++;
 	}
+	return (ptr);
 }
