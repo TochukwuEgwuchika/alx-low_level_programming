@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
  * struct dog - a structure name dog
  * @name: first element
