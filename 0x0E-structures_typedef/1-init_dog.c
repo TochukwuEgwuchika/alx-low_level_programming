@@ -4,8 +4,8 @@
  * init_dog - create dog
  * @d: dog
  * @name: dog name
- * age: age
- * owner: owner
+ * @age: age
+ * @owner: owner
  *
  * Return: void
  */
