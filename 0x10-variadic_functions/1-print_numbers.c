@@ -1,3 +1,4 @@
+#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
 
@@ -27,9 +28,4 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	printf("\n");
 
 	va_end(ap);
-}
-
-void main()
-{
-	print_numbers("#", 4, 1,2,4,6);
 }
