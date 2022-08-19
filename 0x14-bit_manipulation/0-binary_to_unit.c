@@ -37,8 +37,3 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return sum;
 }
-
-int main(void)
-{
-	printf("%d", binary_to_uint("101"));
-}
